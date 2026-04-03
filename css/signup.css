@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a58ca, #0d6efd);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN CONTAINER */
+.signup-container {
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* LEFT INFO */
+.signup-info {
+  flex: 1;
+  padding: 50px;
+  background: #0a58ca;
+  color: white;
+}
+
+.signup-info h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.signup-info p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* SIGNUP CARD */
+.signup-card {
+  flex: 1;
+  padding: 50px;
+}
+
+.signup-card h2 {
+  color: #0a58ca;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #0a58ca;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #0a58ca;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #084298;
+}
+
+/* LINK */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #0a58ca;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-info {
+    text-align: center;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Place | Pinpointa</title>
+  <link rel="stylesheet" href="css/add-place.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="top-bar">
+  <a href="search.html" class="back">← Back</a>
+  <h1>Pinpointa</h1>
+</header>
+
+<main class="container">
+
+  <h2>Add a place or extra information</h2>
+  <p class="subtitle">
+    Help others by adding accurate information about a place you know.
+  </p>
+
+  <form class="add-form">
+
+    <label>Place name</label>
+    <input type="text" placeholder="e.g. Green Valley School">
+
+    <label>Category</label>
+    <select>
+      <option>Select category</option>
+      <option>School</option>
+      <option>Hospital</option>
+      <option>Restaurant</option>
+      <option>Hotel</option>
+      <option>Bank</option>
+      <option>Other</option>
+    </select>
+
+    <label>Location</label>
+    <input type="text" placeholder="Area / Town / City">
+
+    <div class="row">
+      <div>
+        <label>Opening time</label>
+        <input type="time">
+      </div>
+      <div>
+        <label>Closing time</label>
+        <input type="time">
+      </div>
+    </div>
+
+    <label>Price range (optional)</label>
+    <select>
+      <option>Affordable</option>
+      <option>Moderate</option>
+      <option>Expensive</option>
+    </select>
+
+    <label>Additional information</label>
+    <textarea placeholder="Any helpful details…"></textarea>
+
+    <label>Upload image (optional)</label>
+    <input type="file">
+
+    <button type="submit" class="primary">Submit information</button>
+
+    <p class="note">
+      Submissions are reviewed before appearing publicly.
+    </p>
+
+  </form>
+
+</main>
+
+</body>
+</html>

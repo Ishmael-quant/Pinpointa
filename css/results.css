@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f9ff;
+}
+
+.top-bar {
+  background: white;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.top-bar h1 {
+  color: #1e6bff;
+}
+
+.filters {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 12px 30px;
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.filters select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.results {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.result-card {
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  gap: 20px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.result-card img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.info h3 {
+  margin: 0 0 6px;
+}
+
+.badges {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.badge.blue { background: #1e6bff; }
+.badge.green { background: #2ecc71; }
+.badge.red { background: #e74c3c; }
+
+.location {
+  color: #666;
+  font-size: 14px;
+}
+
+.rating {
+  font-size: 14px;
+}
+
+.view {
+  color: #1e6bff;
+  font-weight: 600;
+}

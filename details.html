@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Place Details | Pinpointa</title>
+  <link rel="stylesheet" href="css\details.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="top-bar">
+  <a href="results.html" class="back">← Back</a>
+  <h1>Pinpointa</h1>
+  <div class="profile">👤</div>
+</header>
+
+<main class="container">
+
+  <section class="top-section">
+    <img src="img/place1.jpg" class="main-image">
+
+    <div class="details">
+      <h2>Kenyatta National Hospital</h2>
+
+      <div class="badges">
+        <span class="badge blue">Hospital</span>
+        <span class="badge green">Open</span>
+      </div>
+
+      <p>📍 Nairobi, Kenya</p>
+      <p>⏰ Open • Closes at 9:00 PM</p>
+      <p>💰 Public / Affordable</p>
+
+      <div class="actions">
+        <button class="primary">Add Review</button>
+        <button class="outline">Save</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=36.80%2C-1.30%2C36.84%2C-1.28"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <section class="reviews">
+    <h3>Reviews</h3>
+
+    <div class="review">
+      <strong>⭐⭐⭐⭐⭐ John D.</strong>
+      <p>Very professional staff and fast service.</p>
+    </div>
+
+    <div class="review">
+      <strong>⭐⭐⭐⭐ Mary K.</strong>
+      <p>Clean facilities but waiting time can be long.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <p>Know this place better?</p>
+    <button class="primary" onclick="location.href='add-place.html'">
+  Add information
+</button>
+  </section>
+
+</main>
+
+</body>
+</html>

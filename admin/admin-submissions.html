@@ -1,0 +1,140 @@
+<h1>User Submitted Places</h1>
+<p class="subtitle">
+  Review and manage places submitted by users.
+</p>
+
+<div class="filter-bar">
+  <input type="text" placeholder="Search place name...">
+  <select>
+    <option>All Categories</option>
+    <option>Hospital</option>
+    <option>School</option>
+    <option>Restaurant</option>
+  </select>
+  <select>
+    <option>All Status</option>
+    <option>Pending</option>
+    <option>Approved</option>
+    <option>Rejected</option>
+  </select>
+</div>
+
+<table class="submissions-table">
+  <tr>
+    <th>Place</th>
+    <th>Category</th>
+    <th>Submitted By</th>
+    <th>Date</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+
+  <tr>
+    <td>Hope Clinic</td>
+    <td>Hospital</td>
+    <td>user_102</td>
+    <td>12 Aug 2025</td>
+    <td><span class="badge pending">Pending</span></td>
+    <td>
+      <button class="btn approve">Approve</button>
+      <button class="btn reject">Reject</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Green Hills School</td>
+    <td>School</td>
+    <td>mary_k</td>
+    <td>10 Aug 2025</td>
+    <td><span class="badge approved">Approved</span></td>
+    <td>
+      <button class="btn view">View</button>
+    </td>
+  </tr>
+</table>
+
+<style>.subtitle {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.submissions-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.submissions-table th,
+.submissions-table td {
+  padding: 14px;
+  text-align: left;
+}
+
+.submissions-table th {
+  background: #f8f9fa;
+  font-size: 13px;
+  color: #495057;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.pending { background: #fff3cd; color: #664d03; }
+.approved { background: #d1e7dd; color: #0f5132; }
+.rejected { background: #f8d7da; color: #842029; }
+
+.btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.approve { background: #0d6efd; color: white; }
+.reject { background: #dc3545; color: white; }
+.view { background: #6c757d; color: white; }
+
+.submissions-table {
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+}
+
+.submissions-table th {
+  background: var(--soft-blue);
+  color: var(--primary-blue);
+}
+
+.pending {
+  background: #e7f1ff;
+  color: #0d6efd;
+}
+
+.approved {
+  background: #dbeafe;
+  color: #0a58ca;
+}
+
+.rejected {
+  background: #f1f5f9;
+  color: #64748b;
+}
+</style>

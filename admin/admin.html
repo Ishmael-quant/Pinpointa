@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinpointa Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<div class="admin-layout">
+
+  <aside class="sidebar">
+    <h2>Pinpointa</h2>
+    <nav>
+      <a href="#dashboard" class="nav-link active">Dashboard</a>
+      <a href="#places" class="nav-link">Places</a>
+      <a href="#submissions" class="nav-link">User Submissions</a>
+      <a href="#analytics" class="nav-link">Analytics</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section id="dashboard" class="section">
+      <section id="dashboard" class="section">
+  <h1>Admin Dashboard</h1>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>Total Searches</h3>
+      <p>12,430</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Active Users</h3>
+      <p>842</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Users</h3>
+      <p>3,214</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>User Submissions</h3>
+      <p>156</p>
+    </div>
+  </div>
+
+  <p class="dashboard-note">
+    Pinpointa usage has increased steadily in the last 30 days,
+    driven by nearby searches for essential services.
+  </p>
+</section>
+    </section>
+
+    <section id="places" class="section">
+      <section id="places" class="section">
+  <h1>Registered Places</h1>
+
+  <div class="place-card">
+    <img src="img/school.jpg">
+    <div>
+      <h3>Green Valley School</h3>
+      <p>School • Nairobi</p>
+      <span class="status open">Open</span>
+    </div>
+  </div>
+
+  <div class="place-card">
+    <img src="img/hospital.jpg">
+    <div>
+      <h3>Sunrise Hospital</h3>
+      <p>Hospital • Kiambu</p>
+      <span class="status closed">Closed</span>
+    </div>
+  </div>
+</section>
+    </section>
+
+    <section id="submissions" class="section">
+      <h1><a href="admin-submissions.html">User Submissions</a></h1>
+    </section>
+
+    <section id="analytics" class="section">
+      <h1>Usage Analytics</h1>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>Users by Age Group</h3>
+      <canvas id="ageChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Gender Distribution</h3>
+      <canvas id="genderChart"></canvas>
+    </div>
+  </div>
+</section>
+  </main>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+new Chart(ageChart, {
+  type: 'bar',
+  data: {
+    labels: ['13–18', '19–25', '26–35', '36–50', '50+'],
+    datasets: [{
+      data: [120, 540, 680, 310, 90],
+      backgroundColor: '#0d6efd',
+      borderRadius: 6
+    }]
+  },
+  options: {
+    plugins: { legend: { display: false } },
+    responsive: true,
+    maintainAspectRatio: false
+  }
+});
+
+new Chart(genderChart, {
+  type: 'doughnut',
+  data: {
+    labels: ['Male', 'Female'],
+    datasets: [{
+      data: [58, 42],
+      backgroundColor: ['#0d6efd', '#6ea8fe']
+    }]
+  },
+  options: {
+    plugins: { legend: { position: 'bottom' } },
+    cutout: '65%'
+  }
+});
+</script>
+
+</body>
+</html>
