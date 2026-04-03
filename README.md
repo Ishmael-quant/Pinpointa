@@ -25,5 +25,7 @@ WHY INVESTORS MIGHT CARE:
 Discover trusted local places powered by your community.
 Pinpointa helps you find what matters — faster, and with confidence.
 
+/*FOR NOW, THERE IS NO BACKEND*/
+
 Developed  by Ishmael Ogweno Mboya using various tools
 ©ISHMAEL OGWENO MBOYA 2026
