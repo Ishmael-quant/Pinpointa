@@ -1,10 +1,5 @@
   PINPOINTA
-Pinpointa is a community-powered platform that helps people discover reliable local places they can trust — from small businesses to essential services that are often missing or outdated on traditional maps.
-
-Instead of relying on unverified listings, Pinpointa allows users to submit locations, which are then reviewed before being made public. This ensures that every place listed is relevant, accurate, and useful to the community.
-
-For users, this means finding what they need faster and with confidence.
-For businesses, it means visibility in areas where they are often overlooked.
+Pinpointa prevents travellers from getting lost by combining location-based place discovery, precise place information, filtering, and navigation into a single system. Instead of simply showing a map and expecting the traveller to know already what they are looking for, Pinpointa is designed to help them identify the right destination first—for example, finding a nearby hotel, restaurant, hospital, tourist attraction, or other service—then showing its location and helping the traveller navigate there. Its advantage is its focus on discovering and understanding local places, rather than being primarily a general-purpose mapping service. This can make Pinpointa particularly useful to travellers who are unfamiliar with an area because they can search by what they need, compare nearby options, see relevant information about each place, and then proceed to the destination with a clearer understanding of where they are going.
 
 By combining local knowledge with simple verification, Pinpointa builds a growing network of trusted, community-driven location data — starting small, but designed to scale across cities and regions.
 
